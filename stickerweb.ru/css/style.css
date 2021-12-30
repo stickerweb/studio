@@ -1012,6 +1012,26 @@ body {
     clear: both; 
 	margin-bottom: 50px;
 }
+
+a.main-screen-btn{
+	opacity: 0.8;
+	color: white;
+	padding: 15px;
+	background-color: rgb(39, 36, 204);
+	z-index: auto;
+	border-radius: 50px;
+	pointer-events: auto;
+	font-size: 16px;
+}
+.oznak{
+	position: absolute;
+	top: 65%;
+	left: 43%;
+}
+a.main-screen-btn:hover{
+	opacity: 0.5;
+}
+
 /*------------------------------------------------------------------------------------------*/
 /* 12. RESPONSIVE */
 /*------------------------------------------------------------------------------------------*/
@@ -1019,6 +1039,10 @@ body {
     body {
         font-size: 14px
     }
+	.oznak{
+		left: 30%;
+		top: 60%;
+	}
 }
 @media screen and (max-width: 880px) {
 	html,
@@ -1027,7 +1051,7 @@ body {
 		width: 100vw;
 		height: 100%;
 	}
-
+	
 }
 @media (max-width: 767px) {		
 	#content-container {
@@ -1048,6 +1072,7 @@ body {
 		right: 36px;
 		transform: scale(0.75);
 	}	
+	
 }
 @media screen and (max-width: 767px) {
 	.global-menu__item {
@@ -1058,6 +1083,7 @@ body {
 		right: 15px;		
 		top: 15px;		
 	}	
+	
 }
 @media screen and (max-width: 374px) {
 	.global-menu__item {

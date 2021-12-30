@@ -66,11 +66,11 @@ $(window).on("load", function() {
 });
 document.addEventListener('DOMContentLoaded', function() {
     new Typed('.home_title #subtitle', {
-        strings: ['Мы предлагаем дизайн,решение и идею.'],
+        strings: ['Мы предлагаем дизайн, решение и идею.'],
         typeSpeed: 50,
         backSpeed: 20,
         smartBackspace: true,
-        loop: true
+        loop: false
     });
 });
 $(function() {
@@ -183,10 +183,10 @@ $(function() {
 				data: form_data
 			}).done(function (data) {
 				if(data["status"] == "success"){
-					$(".contact-message").html("<span class='sucess'>Thank you! Your message has been successfully sent. We will contact you very soon!</span>");
+					$(".contact-message").html("<span class='sucess'>Благодарим вас! Ваше сообщение успешно отправлено. Мы обязательно свяжемся с вами в ближайшее время!</span>");
 				}
 				if(data["status"] == "error"){
-					$(".contact-message").html("<span class='error'>There was an error trying to send your message. Please try again later.</span>");
+					$(".contact-message").html("<span class='error'>Произошла ошибка при попытке отправки сообщения. Пожалуйста, попробуйте ещё раз позднее.</span>");
 				}
 			}).fail(function (data) {
 				console.log(data);
